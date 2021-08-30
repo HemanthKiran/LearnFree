@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>LearnFree</title>
-    <link rel="stylesheet" href="stylesheet1.css" />
+    <link rel="stylesheet" href="main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -24,9 +24,9 @@
     </div>
 
     <div class="main">
-      <div class="copy-container">
-        <h2>Let's learn to code</h2>
-      </div>
+    
+        <h3>“Code that communicates its purpose is very important. I often refactor just when I’m reading some code. That way, as I gain understanding about the program, I embed that understanding into the code for later so I don’t forget what I learned.”</h3>
+     
 
       <div class="contents">
         <h3 class="section-title">Lessons</h3>
@@ -64,22 +64,21 @@
         </div>
       </div>
 
-      <div class="contact-form">
-        <h3 class="section-title">Contact us</h3>
-        <p>Email (Required)</p>
-        <!-- Add an <input> tag -->
-
-        <input type="text" />
-
-        <p>Message (Required)</p>
-        <!-- Add a <textarea> tag -->
-        <textarea></textarea>
-
-        <p>* Required fields must be filled</p>
-        <!-- Add an <input> tag -->
-        <input class="contact-submit" type="submit" value="send" />
+      <text>Contact</text>
+      <div class="container">
+        <form >
+          <label for="Email">Email</label>
+          <input type="text" id="Email" name="Email" placeholder="Your Email.." required><br>
+      
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name.." required><br>
+      
+          <textarea  placeholder="Write something.." style="height:200px"></textarea><br>
+      
+          <input type="submit" value="Submit">
+        </form>
       </div>
-    </div>
+      
 
     <div class="footer">
       <div class="footer-logo">
