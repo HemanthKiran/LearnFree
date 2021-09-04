@@ -10,35 +10,23 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+   <script src="login.js"></script>
   </head>
   <body>
     <div class="header">
         <div class="header-logo">
           LearnFree<i style="font-size: 24px" class="fa">&#xf02d;</i>
       
-    <form action="main.html" method="GET" >
-      <div class="container">
-        <input type="text" placeholder="Enter Username" name="uname" required />
-       </br>
-        <input
-          type="password"
-          placeholder="Enter Password"
-          name="psw"
-          required
-        />
-
-        <button type="submit">Login</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember" /> Remember
-          me
-        </label>
-      </div>
-
-      <div class="container" style="background-color: #f1f1f1">
-        <button type="button" class="cancelbtn">Cancel</button>
+          <form name="loginform" onSubmit="return validateForm();" action="main.html" method="post">
+            <label>User name</label>
+            <input type="text" name="usr" placeholder="Enter username"> 
+            <label>Password</label>
+            <input type="password" name="pword" placeholder="Enter password"><br></br>
+            <input type="submit" value="Login"/>
+    
         <span class="psw"><a href="#">Forgot_password?</a></span>
       </div>  
     </div>
-    </form>
+  </form>
   </body>
 </html>
